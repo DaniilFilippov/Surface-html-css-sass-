@@ -24,13 +24,15 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer({ overrideBrowserslist: ['last 2 versions']})
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
 gulp.task("serve", ["style"], function() {
   server.init({
     server: ".",
+    index: "source/index.html",
+    browser: 'chrome',
     notify: false,
     open: true,
     cors: true,
