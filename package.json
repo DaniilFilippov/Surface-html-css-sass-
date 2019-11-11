@@ -1,23 +1,39 @@
 {
   "name": "surface",
-  "version": "17.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Учебный проект",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
+    "build": "gulp style",
+    "start": "gulp serve",
     "test": "npm run editorconfig"
   },
   "editorconfig-cli": [
+    "*.html",
+    "/source/*.html",
     "*.json",
-    "source/*.html"
+    "*.js",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "10.16.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.1",
+    "postcss-cli": "^6.1.3"
   }
 }
