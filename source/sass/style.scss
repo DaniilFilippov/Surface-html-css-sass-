@@ -1,4 +1,6 @@
-$red: #33dd11;
-body {
-  background-color: $red;
-}
+@import "mixin.scss";
+@import "variables.scss";
+@import "blocks/global.scss";
+@import "blocks/pages-header.scss";
+@import "blocks/main-nav.scss";
+
