@@ -1,7 +1,60 @@
-.pages-header{
-  min-height: 900px;
+.pages-header {
+  min-height: 800px;
   width: auto;
-
   background: url("../../img/bg.jpg") black no-repeat center 0;
 }
 
+.pages-header__main {
+  padding-top: 190px;
+}
+
+.pages-header__logo {
+  width: 220px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.pages-header__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pages-header__description {
+  margin: 0;
+  font-size: 24px;
+  color: rgba(255,255,255, 0.77);
+}
+
+@media (min-width: $tablet-width) {
+  .pages-header__main {
+    padding-top: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pages-header {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .pages-header__main {
+    padding-top: 135px;
+  }
+
+  .pages-header__title {
+    font-size: 70px;
+  }
+
+  .pages-header__description {
+    font-size: 38px;
+    line-height: 56px;
+  }
+
+  .pages-header__logo {
+    width: 330px;
+    height: 300px;
+  }
+}
