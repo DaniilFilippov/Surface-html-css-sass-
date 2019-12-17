@@ -1,0 +1,21 @@
+.container {
+  width: auto;
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .container1 {
+    width: 1166px;
+    margin: 0 auto;
+  }
+
+  .container--main {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

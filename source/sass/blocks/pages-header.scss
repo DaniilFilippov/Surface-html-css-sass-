@@ -1,7 +1,7 @@
 .pages-header {
-  min-height: 800px;
-  width: auto;
-  background: url("../../img/bg.jpg") black no-repeat center 0;
+  padding-bottom: 155px;
+  margin-bottom: 55px;
+  background: url("../../img/bg.jpg") WHITE no-repeat center 0/cover;
 }
 
 .pages-header__main {
@@ -18,7 +18,7 @@
   margin: 0;
   margin-bottom: 15px;
   font-size: 42px;
-  font-weight: bold;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
@@ -29,16 +29,13 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .pages-header__main {
     padding-top: 250px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .pages-header {
-    width: 1200px;
-    margin: 0 auto;
-  }
 
   .pages-header__main {
     padding-top: 135px;

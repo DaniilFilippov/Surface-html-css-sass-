@@ -1,0 +1,41 @@
+.button {
+  padding: 12px 12px;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.button--grey {
+  color: #8c8881;
+  background-color: #e9e5dd;
+
+}
+
+.button--orange {
+  color: black;
+  background-color: #f9c56a;
+}
+
+.button--orange:focus,
+.button--orange:active,
+.button--orange:hover {
+  background-color: #f6a312;
+}
+
+.button--grey:focus,
+.button--grey:active,
+.button--grey:hover {
+  background-color: #bdb5a5;
+  color: black;
+}
+
+@media  (min-width: $tablet-width) {
+  .button {
+    padding: 12px 25px;
+    font-size: 18px;
+  }
+
+}

@@ -1,0 +1,105 @@
+.reach-us {
+  text-align: left;
+  margin: 0 8px 40px;
+}
+
+.reach-us__social-list {
+  @include reset-list();
+}
+
+.reach-us__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #f9c56a;
+}
+
+.reach-us__social-list {
+  margin-bottom: 20px;
+}
+
+.reach-us__social-item {
+  display: inline-block;
+  margin-right: -2px;
+  text-align: center;
+  background-color: #343434;
+  border-radius: 2px;
+}
+
+.reach-us__svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+.reach-us__social-item:hover,
+.reach-us__social-item:active,
+.reach-us__social-item:focus {
+  background-color: #f9c858;
+}
+
+.reach-us__social-item:hover .reach-us__svg,
+.reach-us__social-item:active .reach-us__svg,
+.reach-us__social-item:focus .reach-us__svg {
+  fill: black;
+}
+
+.reach-us__social-btn {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-top: 3px;
+  text-decoration: none;
+ }
+
+.reach-us__adress,
+.reach-us__phone,
+.reach-us__email {
+  position: relative;
+  margin: 15px 20px;
+  font-family: "Josefin Sans";
+  font-size: 17px;
+  color: #bcbcbc;
+}
+
+.reach-us__adress::after,
+.reach-us__phone::after,
+.reach-us__email::after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.reach-us__adress::after {
+  background: url("../../img/pin.png") no-repeat 0 0;
+}
+
+.reach-us__phone::after {
+  background: url("../../img/phone.png") no-repeat 0 0;
+}
+
+.reach-us__email::after {
+  background: url("../../img/mail.png") no-repeat 0 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .reach-us__adress,
+  .reach-us__phone,
+  .reach-us__email {
+    margin-left: 420px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reach-us__adress,
+  .reach-us__phone,
+  .reach-us__email {
+    margin-left: 20px;
+  }
+}

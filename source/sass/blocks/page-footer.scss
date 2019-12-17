@@ -1,0 +1,40 @@
+.page-footer {
+  margin-bottom: 40px;
+  background-color: black;
+  background: url("../../img/bg-footer.jpg") black no-repeat center 0/cover;
+}
+
+.page-footer__main {
+  @include clear-fix();
+  padding-top: 40px;
+}
+
+.page-footer__bottom {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: "Josefin Sans";
+  font-size: 17px;
+  color: #bcbcbc;
+  background-color: black;
+}
+
+@media  (min-width: $tablet-width){
+  .page-footer__main {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .page-footer__main {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

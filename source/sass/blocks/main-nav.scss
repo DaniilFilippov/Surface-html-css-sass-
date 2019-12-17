@@ -1,6 +1,7 @@
 .main-nav {
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 .main-nav__wrapper--nav {
@@ -67,9 +68,9 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
+    right: 50%;
+
+    transform: translateX(50%);
     background-color: rgba(0,0,0,0.3);
   }
 

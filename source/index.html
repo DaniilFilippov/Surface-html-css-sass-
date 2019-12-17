@@ -5,60 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <link rel="stylesheet"  href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Raleway:400,700,800&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="pages-header">
   <nav class="main-nav">
-    <div class="main-nav__wrapper">
-      <a class="main-nav__logo" href="">
-        <img src="img/nav-logo.png" alt="Логотип">
-      </a>
-      <button class="main-nav__toggle">
-        <span class="main-nav__toggle-item"></span>
-        <span class="main-nav__toggle-item"></span>
-        <span class="main-nav__toggle-item"></span>
-      </button>
+    <div class="container--main">
+      <div class="main-nav__wrapper">
+        <a class="main-nav__logo" href="">
+          <img src="img/nav-logo.png" alt="Логотип">
+        </a>
+        <button class="main-nav__toggle">
+          <span class="main-nav__toggle-item"></span>
+          <span class="main-nav__toggle-item"></span>
+          <span class="main-nav__toggle-item"></span>
+        </button>
+      </div>
+      <div class="main-nav__wrapper--nav main-nav--closed">
+        <ul class="main-nav__list  site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="">Home</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">Menu</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">Reservation</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">Pages</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">Recipe</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">Blog</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">Shop</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="">Contact</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list basket-list">
+          <li class="basket-list__item">
+            <a class="basket-list__link" href=""></a>
+            <span class="basket-list__amount">3</span>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="main-nav__wrapper--nav main-nav--closed">
-      <ul class="main-nav__list  site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link" href="">Home</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="">Menu</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="">Reservation</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="">Pages</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="">Recipe</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="">Blog</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="">Shop</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="">Contact</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list basket-list">
-        <li class="basket-list__item">
-          <a class="basket-list__link" href=""></a>
-          <span class="basket-list__amount">3</span>
-        </li>
-      </ul>
-    </div>
+
   </nav>
   <section class="pages-header__main">
-    <a href="">
-      <img class="pages-header__logo" src="img/logo.png" alt="Главный логотип">
-    </a>
+    <img class="pages-header__logo" src="img/logo.png" alt="Главный логотип">
     <h1 class="pages-header__title">Delicious food</h1>
     <p class="pages-header__description">
       Tomato is a delitious restaurant website template
@@ -66,16 +67,232 @@
   </section>
 </header>
 <main class="page-main">
-
-<div style="height: 1000px">
-
-</div>
-
+  <section class="about container1">
+    <h2 class="description-block__title description-block__title--black">The restaurant</h2>
+    <p class="description-block__description description-block__description--dark">A little about us and a breif history of how we started.</p>
+    <div class="about__wrapper-img">
+      <button class="about__button-img">
+        <img class="about__image" src="img/thumb7.png" alt="Dish1">
+      </button>
+      <button class="about__button-img about__button-img--hidden">
+        <img class="about__image" src="img/thumb6.png" alt="Dish1">
+      </button>
+      <button class="about__button-img about__button-img--hidden">
+        <img class="about__image" src="img/thumb6.png" alt="Dish1">
+      </button>
+    </div>
+    <p class="about__description">
+      Tomato, a restaurant owned and operated by award-winning chef Henry Baker,
+      offers first-class cuisine and service in an intimate, sophisticated setting.
+      Located New York City, in the heart of Greenwich Village, the restaurant features
+      Chef Lo's contemporary American cuisine. By combining flavors inspired by her
+      Asian roots.
+    </p>
+    <p class="about__description">
+      Tomato, also features a wine list that celebrates women in wine,
+      primarily offering selections produced by female vintners or vineyar
+    </p>
+    <img class="about__signature" src="img/signature.png" alt="">
+  </section>
+  <section class="specials">
+    <h2 class="description-block__title description-block__title--white">TODAY'S SPECIALS</h2>
+    <p class="description-block__description description-block__description--white">A little about us and a breif history of how we started.</p>
+    <div class="specials__wrapper slider">
+      <ul class="specials__list slider__list">
+        <li class="specials__item">
+        <img class="specials__image" src="img/thumb4.png" alt="Picture of dish">
+        <h3 class="specials__title">1 Pancake with Caramel</h3>
+        <p class="specials__recommendation">
+          If you are a fan of caramel cake, then you'll love our Pancake with caramel icecream.
+          It's not thick, but very tasty.
+        </p>
+        <p class="specials__description">
+          Ultrices In massa est, dignissim in libero ac, fringilla ornare mi. Ultrices eget justo.
+          Nam purus lacus, efficitur eget laoreet sed, finibus nec neque. Cras eget enim in diam dapibus sagittis.
+          accumsan, habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </p>
+        <a class="specials__order button button--orange" href="">Order now</a>
+        <button class="button button--grey">Add to cart</button>
+        </li>
+        <li class="specials__item">
+          <img class="specials__image" src="img/thumb4.png" alt="Picture of dish">
+          <h3 class="specials__title">2 Pancake with Caramel</h3>
+          <p class="specials__recommendation">
+            If you are a fan of caramel cake, then you'll love our Pancake with caramel icecream.
+            It's not thick, but very tasty.
+          </p>
+          <p class="specials__description">
+            Ultrices In massa est, dignissim in libero ac, fringilla ornare mi. Ultrices eget justo.
+            Nam purus lacus, efficitur eget laoreet sed, finibus nec neque. Cras eget enim in diam dapibus sagittis.
+            accumsan, habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          </p>
+          <a class="specials__order button button--orange" href="">Order now</a>
+          <button class="button button--grey">Add to cart</button>
+        </li>
+        <li class="specials__item">
+          <img class="specials__image" src="img/thumb4.png" alt="Picture of dish">
+          <h3 class="specials__title">3 Pancake with Caramel</h3>
+          <p class="specials__recommendation">
+            If you are a fan of caramel cake, then you'll love our Pancake with caramel icecream.
+            It's not thick, but very tasty.
+          </p>
+          <p class="specials__description">
+            Ultrices In massa est, dignissim in libero ac, fringilla ornare mi. Ultrices eget justo.
+            Nam purus lacus, efficitur eget laoreet sed, finibus nec neque. Cras eget enim in diam dapibus sagittis.
+            accumsan, habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          </p>
+          <a class="specials__order button button--orange" href="">Order now</a>
+          <button class="button button--grey">Add to cart</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="reservations">
+    <h2 class="description-block__title description-block__title--black">RESERVATION</h2>
+    <p class="description-block__description description-block__description--dark">Book a table online. Leads will reach in your email.</p>
+    <div class="reservations__wrapper">
+      <form class="reservations__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="reservations__input-wrapper">
+          <label class="reservations__label" for="reservations-date">Date</label>
+          <input class="reservations__input reservations__input--date" type="text" id="reservations-date" name="date" placeholder="Pick a date" required>
+          <span class="reservations__icon reservations__icon--date"></span>
+        </p>
+        <p class="reservations__input-wrapper">
+          <label class="reservations__label" for="reservations-full-name">Your Name</label>
+          <input class="reservations__input" type="text" id="reservations-full-name" name="full-name" placeholder="Full Name" required>
+          <span class="reservations__icon reservations__icon--full-name"></span>
+        </p>
+        <p class="reservations__input-wrapper">
+          <label class="reservations__label" for="reservations-time">Time</label>
+          <input class="reservations__input" type="text" id="reservations-time" name="time" placeholder="Pick a time" required>
+          <span class="reservations__icon reservations__icon--time"></span>
+        </p>
+        <p class="reservations__input-wrapper">
+          <label class="reservations__label" for="reservations-email">Email Address</label>
+          <input class="reservations__input" type="email" id="reservations-email" name="email" placeholder="Your Email" required>
+          <span class="reservations__icon reservations__icon--email"></span>
+        </p>
+        <p class="reservations__input-wrapper">
+          <label class="reservations__label" for="reservations-guests">Guests</label>
+          <input class="reservations__input" type="number" id="reservations-guests" name="guests" placeholder="How many of you?" required>
+          <span class="reservations__icon reservations__icon--guests"></span>
+        </p>
+        <p class="reservations__input-wrapper">
+          <label class="reservations__label" for="reservations-phone-number">Phone Number</label>
+          <input class="reservations__input" type="tel" id="reservations-phone-number" name="phone-number"
+                 placeholder="Enter your Phone Number" required>
+          <span class="reservations__icon reservations__icon--phone-number"></span>
+        </p>
+        <input class="button button--orange" type="submit"  value="Make reservation">
+      </form>
+    </div>
+    <div class="reservations__wrapper--info">
+      <p class="reservations__info">You can also call: <span>+1 224 6787 004</span> to make a reservation.</p>
+    </div>
+  </section>
 </main>
 <footer class="page-footer">
+
+  <div class="page-footer__main">
+
+    <section class="about-us">
+      <h3 class="about-us__title">About us</h3>
+      <p class="about-us__description">
+        Tomato Restaurant was born of our love for Spanish food & culture. We use flavour,
+        seasonal and local ingredients with inspiration from our cultural heritage.
+      </p>
+      <a class="about-us__read-more" href="">Read More</a>
+    </section>
+
+    <section class="recent-posts">
+      <h3 class="recent-posts__title">Recent post</h3>
+      <ul class="recent-posts__list">
+        <li class="recent-posts__item">
+          <a class="recent-posts__link" href="">
+            <img class="recent-posts__img" src="img/thumb8.png" alt="mini-picture of post">
+            <p class="recent-posts__description">
+              Hand picked ingredients for our best customers
+            </p>
+            <time class="recent-posts__date" datetime="2019-05-12">12 may 2019</time>
+          </a>
+        </li>
+        <li class="recent-posts__item">
+          <a class="recent-posts__link" href="">
+            <img class="recent-posts__img" src="img/thumb8.png" alt="mini-picture of post">
+            <p class="recent-posts__description">
+              Hand picked ingredients for our best customers
+            </p>
+            <time class="recent-posts__date" datetime="2019-05-12">12 may 2019</time>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="reach-us">
+      <h3 class="reach-us__title">Reach us</h3>
+      <ul class="reach-us__social-list">
+        <li class="reach-us__social-item">
+          <a class="reach-us__social-btn" href="">
+            <svg class="reach-us__svg">
+              <use xlink:href="img/social-icons.svg#vk" />
+            </svg>
+          </a>
+        </li>
+        <li class="reach-us__social-item">
+          <a class="reach-us__social-btn" href="">
+            <svg class="reach-us__svg">
+              <use xlink:href="img/social-icons.svg#youtube" />
+            </svg>
+          </a>
+        </li>
+        <li class="reach-us__social-item">
+          <a class="reach-us__social-btn" href="">
+            <svg class="reach-us__svg">
+              <use xlink:href="img/social-icons.svg#fb" />
+            </svg>
+          </a>
+        </li>
+        <li class="reach-us__social-item">
+          <a class="reach-us__social-btn" href="">
+            <svg class="reach-us__svg">
+              <use xlink:href="img/social-icons.svg#inst" />
+            </svg>
+          </a>
+        </li>
+        <li class="reach-us__social-item">
+          <a class="reach-us__social-btn" href="">
+            <svg class="reach-us__svg">
+              <use xlink:href="img/social-icons.svg#twit" />
+            </svg>
+          </a>
+        </li>
+        <li class="reach-us__social-item">
+          <a class="reach-us__social-btn" href="">
+            <svg class="reach-us__svg">
+              <use xlink:href="img/social-icons.svg#pin" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="reach-us__adress">
+        28 Seventh Avenue, Neew York, 10014
+      </p>
+      <p class="reach-us__phone">
+        Phone: (415) 124-5678
+      </p>
+      <p class="reach-us__email">
+        support@restaurant.com
+      </p>
+    </section>
+  </div>
+  <section class="page-footer__bottom">
+    <p class="page-footer__copyright">
+      &copy 2015.Tomato. All rights reserved. Designed with  by Surjithctly
+    </p>
+  </section>
 </footer>
 
 <script  type="text/javascript" src="js/main.js"></script>
-</body>
+<script  type="text/javascript" src="js/slider.js"></script>
 </html>
 

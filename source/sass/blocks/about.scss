@@ -1,0 +1,69 @@
+.about {
+  padding: 0 8px;
+  margin-bottom: 150px;
+}
+
+
+.about__description {
+  font-family:"Josefin Sans";
+  font-size: 22px;
+  text-align: left;
+  line-height: 30px;
+  color: #777777;
+}
+
+.about__button-img {
+  padding: 0;
+  padding-right: 5px;
+  border: 1px solid transparent;
+  background-color: rgba(0,0,0,0);
+}
+
+.about__button-img--hidden {
+  display: none;
+}
+
+.about__image {
+  max-width: 100%;
+}
+
+.about__signature {
+  float: left;
+  max-width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .about__button-img--hidden:nth-child(2) {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 0 15px;
+    margin-bottom: 175px;
+  }
+  .about__button-img {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .about__button-img--hidden {
+    display: inline-block;
+
+  }
+  .about__button-img--hidden:nth-child(2) {
+    float: left;
+    width: 174px;
+
+  }
+  .about__button-img--hidden:nth-child(3) {
+    width: 174px;
+    float: right;
+  }
+  .about__wrapper-img {
+    width: 360px;
+    padding-right: 30px;
+    float: left;
+  }
+}

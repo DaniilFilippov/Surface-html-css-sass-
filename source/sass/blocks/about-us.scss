@@ -1,0 +1,40 @@
+
+.about-us {
+  margin: 0 8px 40px;
+  text-align: left;
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #f9c56a;
+}
+
+.about-us__description {
+  margin-bottom: 10px;
+  font-family: "Josefin Sans";
+  font-size: 19px;
+  line-height: 25px;
+  color: #d8d8d8;
+}
+
+.about-us__read-more {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #f9c56a;
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 375px;
+  }
+}
+
+
